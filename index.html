@@ -20,7 +20,7 @@
                 <a href="./index.html" class="logo"> <span class="accent-logo">Web</span>Studio</a>
                 <ul class="site-nav list">
                     <li class="item">
-                        <a href="./index.html" class="nav-link link current">Студія</a>
+                        <a href="./index.html" class="nav-link link current active">Студія</a>
                     </li>
                     <li class="item">
                         <a href="./portfolio.html" class="nav-link link">Портфоліо</a>
@@ -49,7 +49,7 @@
         <section class="hero overlay">
             <div class="container hero-container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="studio-button">Замовити послугу</button>
+                <button type="button" class="studio-button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="benefits-section">
@@ -100,13 +100,25 @@
                 <h2 class="work-title">Чим ми займаємося</h2>
                 <ul class="list work-section">
                     <li>
-                        <img class="picture" src="./images/picture1.jpg" alt="Чоловік друкує завдання з листка на планшеті" width="370" height="294">
+                        <div class="picture-relative">
+                            <img class="picture" src="./images/picture1.jpg" alt="Чоловік друкує завдання з листка на планшеті" width="370" height="294">
+                                <div class="backgroung-picture"></div>
+                            <h6 class="picture-text">десктопні додатки</h6>
+                        </div>   
                     </li>
                     <li>
-                        <img class="picture" src="./images/picture2.jpg" alt="Жінка друкує завдання з смартфону на ноутбукі" width="370" height="294">
+                        <div class="picture-relative">
+                            <img class="picture" src="./images/picture2.jpg" alt="Жінка друкує завдання з смартфону на ноутбукі" width="370" height="294">
+                                <div class="backgroung-picture"></div>
+                            <h6 class="picture-text">мобільні додатки</h6>
+                        </div>
                     </li>
                     <li>
-                        <img class="picture" src="./images/picture3.jpg" alt="Жінка підбирає колір з планшету на комп'ютері" width="370" height="294">
+                        <div class="picture-relative">
+                            <img class="picture" src="./images/picture3.jpg" alt="Жінка підбирає колір з планшету на комп'ютері" width="370" height="294">
+                                <div class="backgroung-picture"></div>
+                            <h6 class="picture-text">дизайнерські рішення</h6>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -364,6 +376,17 @@
         </div>
             
     </footer>
+
+    <div class="backdrop  data-backdrop">
+        <div class="modal">
+        <button class="modal-btn" data-modal-close>
+            <svg class="icon" width="20" height="20">
+                <use href="./images/cross.svg"></use>
+            </svg>
+        </button>
+        </div>
+    </div>
     
+    <script src="./js/modal.js"></script>
 </body>
 </html>
