@@ -684,7 +684,7 @@ color:var(--primary-white-color);
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition-property: ();
-    transition-duration: 500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
